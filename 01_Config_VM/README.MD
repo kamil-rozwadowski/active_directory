@@ -36,15 +36,15 @@
     ```
     Rename-Computer -NewName HOST1
     ```
-    - Configure IPAdresses
+ - Configure IPAdresses
     ```
     New-NetIPAddress –IPAddress 192.168.56.101 -DefaultGateway 192.168.56.1 -PrefixLength 24 -InterfaceIndex (Get-NetAdapter).InterfaceIndex
     ```
-       - Configure DNSServerAdresses
+  - Configure DNSServerAdresses
     ```
     Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses 192.168.56.15
     ```
-     - Join to the Domain:
+ - Join to the Domain:
     ```
     Add-Computer -DomainName DOMAINNAME -Restart
     ```
