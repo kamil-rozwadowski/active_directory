@@ -1,6 +1,7 @@
 # Configuration
 
 1. Configured server VM as Domain Controler.
+<<<<<<< HEAD
     - Rename computer:
     ```
     Rename-Computer -NewName DC1
@@ -24,6 +25,12 @@
     ```
     Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses 192.168.56.15
     ```
+=======
+- Rename computer:
+    ```
+    Rename-Computer -NewName DC1
+    ```
+>>>>>>> a264c405a3c1c58e2d9c3bb6e4b4a4cef7181f51
 2. Connected Host machine to the domain.
  - Rename computer:
     ```
